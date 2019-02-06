@@ -28,5 +28,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // document.getElementById("one").style.background = `url(${contents.headerImg})`;
     document.getElementById("header-img").src = contents.headerImg;
+
+
+    const endDate = new Date(contents.endDate).getTime();
+    let countdown = setInterval(function(){
+
+    }, 1000);
+
   });
 });
