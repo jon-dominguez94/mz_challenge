@@ -37,11 +37,14 @@ function fillItems(items){
   const listings = document.getElementById("listings");
   items.forEach(item => {
     const figure = document.createElement("FIGURE");
+    figure.classList.add("sale-item")
     const img = document.createElement("IMG");
     img.classList.add("sale-pic");
     img.src = item.pic;
     figure.appendChild(img);
     listings.appendChild(figure);
+    const hr = document.createElement("HR");
+    listings.appendChild(hr);
   });
 }
 

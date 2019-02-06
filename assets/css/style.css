@@ -30,9 +30,23 @@ p {
   font-size: 24px;
 }
 
+#three {
+  margin: 2px 20px 40px 20px;
+  background: #303131;
+  border: 1px solid white;
+}
+
+.sale-item {
+  margin: 10px;
+}
+
 .sale-pic {
   width: 100px;
   height: 100px;
+}
+
+hr {
+  width: 90%;
 }
 
 #four {
