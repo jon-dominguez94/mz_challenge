@@ -13,3 +13,11 @@ header {
 #one {
   height: 50vh;
 }
+
+footer {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  padding: 30px;
+}
