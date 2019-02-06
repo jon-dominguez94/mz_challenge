@@ -33,6 +33,14 @@ function setTimer(ending){
   }, 1000);
 }
 
+function fillItems(items){
+  const listings = document.getElementById("listings");
+  items.forEach(item => {
+    const figure = document.createElement("FIGURE");
+    listings.appendChild(figure);
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   loadJSON(function(response) {
     const contents = JSON.parse(response);
@@ -40,6 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("header-img").src = contents.headerImg;
     setTimer(contents.endDate);
+    fillItems(contents.items);
 
   });
 });
