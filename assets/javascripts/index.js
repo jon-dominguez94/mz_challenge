@@ -56,6 +56,14 @@ function fillItems(items){
   });
 }
 
+
+function squarePics(img){
+  const squares = document.getElementsByTagName("article");
+  for(let i = 0; i < squares.length; i++){
+    squares[i].style.background = `url(${img})`;
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   loadJSON(function(response) {
     const contents = JSON.parse(response);
@@ -64,6 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("header-img").src = contents.headerImg;
     setTimer(contents.endDate);
     fillItems(contents.items);
-
+    squarePics(contents.ruby);
   });
 });

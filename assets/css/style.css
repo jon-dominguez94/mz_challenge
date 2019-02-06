@@ -31,9 +31,11 @@ p {
 }
 
 #three {
-  margin: 2px 20px 40px 20px;
+  margin: 2px 30px 40px 30px;
   background: #303131;
   border: 1px solid white;
+  max-height: 366px;
+  overflow: scroll;
 }
 
 .sale-item {
@@ -45,10 +47,11 @@ p {
 .sale-pic {
   width: 100px;
   height: 100px;
+  background: white;
 }
 
 .sale-desc {
-  margin: 0 5%;
+  margin: 10px 5%;
 }
 
 hr {
@@ -67,11 +70,21 @@ article {
   background: red;
 }
 
+#floater {
+  position: fixed;
+  right: 0;
+  top: 70%;
+  background: purple !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  text-align: center;
+}
+
 footer {
-  /* width: 100vw; */
-  /* position: fixed;
-  bottom: 0;
-  display: block; */
   text-align: center;
   padding: 30px;
   background: #232727;

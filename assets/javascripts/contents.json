@@ -4,15 +4,28 @@
   "items": [
     {
       "pic": "./assets/images/css.png",
-      "desc": "css"
+      "desc": "Cascading Style Sheets Level 3 (CSS3) is the iteration of the CSS standard used in the styling and formatting of Web pages. CSS3 incorporates the CSS2 standard with some changes and improvements. A key change is the division of standard into separate modules, which makes it easier to learn and understand."
     },
     {
       "pic": "./assets/images/html.png",
-      "desc": "html"
+      "desc": "HTML5 was designed to supersede both HTML 4 and XHTML by providing web developers with a simpler standard that includes several new features for the modern web. The table below includes a list of new elements, or tags, introduced in HTML5 that are used to define the structure of a document."
     },
     {
       "pic": "./assets/images/js.png",
-      "desc": "js"
+      "desc": "What is JavaScript? JavaScript® (often shortened to JS) is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well."
+    },
+    {
+      "pic": "./assets/images/react.png",
+      "desc": "React takes the description and displays the result. In particular, render returns a React element, which is a lightweight description of what to render. Most React developers use a special syntax called “JSX” which makes these structures easier to write."
+    },
+    {
+      "pic": "./assets/images/redux.png",
+      "desc": "Redux is a small library with a simple, limited API designed to be a predictable container for application state. It operates in a similar fashion to a reducing function, a functional programming concept. It is influenced by the functional programming language Elm."
+    },
+    {
+      "pic": "./assets/images/git.png",
+      "desc": "Git is a distributed version-control system for tracking changes in source code during software development. It is designed for coordinating work among programmers, but it can be used to track changes in any set of files. Its goals include speed, data integrity, and support for distributed, non-linear workflows."
     }
-  ]
+  ],
+  "ruby": "./assets/images/postgresql.png"
 }
