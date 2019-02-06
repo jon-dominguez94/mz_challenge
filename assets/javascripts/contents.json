@@ -1,4 +1,18 @@
 {
   "headerImg": "./assets/images/sale.png",
-  "endDate": "Feb 12, 2019 15:37:25"
+  "endDate": "Feb 12, 2019 15:37:25",
+  "items": [
+    {
+      "pic": "./assets/images/css.png",
+      "desc": "css"
+    },
+    {
+      "pic": "./assets/images/html.png",
+      "desc": "html"
+    },
+    {
+      "pic": "./assets/images/js.png",
+      "desc": "js"
+    }
+  ]
 }
