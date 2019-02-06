@@ -11,9 +11,16 @@ header {
   font-size: 32px;
 }
 
-#one {
-  /* height: 50vh; */
-  /* overflow: hidden; */
+#two {
+  padding: 30px 0;
+}
+
+#count-wrapper {
+  
+}
+
+p {
+  text-align: center;
 }
 
 #four {
