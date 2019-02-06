@@ -38,11 +38,17 @@ p {
 
 .sale-item {
   margin: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .sale-pic {
   width: 100px;
   height: 100px;
+}
+
+.sale-desc {
+  margin: 0 5%;
 }
 
 hr {

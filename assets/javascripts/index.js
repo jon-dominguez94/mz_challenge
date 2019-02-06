@@ -43,8 +43,9 @@ function fillItems(items){
     img.classList.add("sale-pic");
     img.src = item.pic;
     figure.appendChild(img);
-
+    
     const figCaption = document.createElement("FIGCAPTION");
+    figCaption.classList.add("sale-desc");
     figCaption.innerHTML = item.desc;
     figure.appendChild(figCaption);
 
