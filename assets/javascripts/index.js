@@ -21,6 +21,29 @@ function loadJSON(callback) {
 
 // const contents = init();
 
+function setTimer(ending){
+  const endDate = new Date(ending).getTime();
+  let countDown = setInterval(function () {
+
+    const now = new Date().getTime();
+    const difference = endDate - now;
+
+    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+    document.getElementById("demo").innerHTML = "Sale ends in " + days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s!";
+
+    if (difference < 0) {
+      clearInterval(countDown);
+      document.getElementById("demo").innerHTML = "Sale has ended!";
+    }
+
+  }, 1000);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   loadJSON(function(response) {
     const contents = JSON.parse(response);
@@ -29,27 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // document.getElementById("one").style.background = `url(${contents.headerImg})`;
     document.getElementById("header-img").src = contents.headerImg;
 
-
-    const endDate = new Date(contents.endDate).getTime();
-    let countDown = setInterval(function(){
-      
-      const now = new Date().getTime();
-      const difference = endDate - now;
-
-      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-
-      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
-
-      if (difference < 0) {
-        clearInterval(countDown);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-      }
-
-    }, 1000);
+    setTimer(contents.endDate);
 
   });
 });
