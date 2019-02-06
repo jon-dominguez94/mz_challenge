@@ -30,6 +30,11 @@ p {
   font-size: 24px;
 }
 
+.sale-pic {
+  width: 100px;
+  height: 100px;
+}
+
 #four {
   display: flex;
   justify-content: space-between;
