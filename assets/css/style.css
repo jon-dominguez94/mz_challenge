@@ -9,3 +9,7 @@ header {
   padding: 30px 0;
   font-size: 32px;
 }
+
+#one {
+  height: 50vh;
+}

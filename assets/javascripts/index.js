@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const contents = JSON.parse(response);
     console.log(contents);
 
-
+    // document.getElementById("one").style.background = `url(${contents.headerImg})`;
+    document.getElementById("header-img").src = contents.headerImg;
   });
 });
