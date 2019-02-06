@@ -35,16 +35,23 @@ function setTimer(ending){
 
 function fillItems(items){
   const listings = document.getElementById("listings");
-  items.forEach(item => {
+  items.forEach((item, i) => {
     const figure = document.createElement("FIGURE");
-    figure.classList.add("sale-item")
+    figure.classList.add("sale-item");
+
     const img = document.createElement("IMG");
     img.classList.add("sale-pic");
     img.src = item.pic;
     figure.appendChild(img);
+
+    const figCaption = document.createElement("FIGCAPTION");
+    figCaption.innerHTML = item.desc;
+    figure.appendChild(figCaption);
+
     listings.appendChild(figure);
     const hr = document.createElement("HR");
-    listings.appendChild(hr);
+    if(i !== items.length - 1)
+      listings.appendChild(hr);
   });
 }
 
