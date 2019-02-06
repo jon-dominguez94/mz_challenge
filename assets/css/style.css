@@ -11,11 +11,13 @@ header {
 }
 
 #one {
-  height: 50vh;
+  /* height: 50vh; */
+  /* overflow: hidden; */
 }
 
 #four {
-  
+  display: flex;
+  justify-content: space-between;
 }
 
 article {
