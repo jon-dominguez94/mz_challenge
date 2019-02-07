@@ -1,4 +1,4 @@
-{
+const contents = {
   "headerImg": "./assets/images/sale.png",
   "endDate": "Feb 12, 2019 15:37:25",
   "items": [

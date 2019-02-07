@@ -65,13 +65,13 @@ function squarePics(img){
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  loadJSON(function(response) {
-    const contents = JSON.parse(response);
-    console.log(contents);
+  // loadJSON(function(response) {
+    // const contents = JSON.parse(response);
+    // console.log(contents);
 
     document.getElementById("header-img").src = contents.headerImg;
     setTimer(contents.endDate);
     fillItems(contents.items);
     squarePics(contents.ruby);
-  });
+  // });
 });
